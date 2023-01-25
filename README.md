@@ -1,15 +1,20 @@
-# Covid-Project-Repository
 
-![covid_dash](https://user-images.githubusercontent.com/91815051/149006650-dfb19f2c-fba8-47f5-9c2d-c456d063d4c9.png)
+## Project Overview
 
-This project inspired by [Alex The Analyst](https://github.com/AlexTheAnalyst) and his [Covid Analysis](https://www.youtube.com/watch?v=qfyynHBFOsM&t=567s).  
+This project was inspired by [Alex The Analyst](https://github.com/AlexTheAnalyst) and his [Covid Analysis](https://www.youtube.com/watch?v=qfyynHBFOsM&t=567s). The goal of this project is to demonstrate how to connect a PostgreSQL database to Python and run queries through it, using the Python libraries Pandas and Psycopg2. The project also includes a Jupyter notebook that shows a step-by-step process for extracting and analyzing historical data of COVID-19 up to January 8, 2022.
 
-I liked the way Alex presented his queries in his analysis and wanted to put my own spin on the project by taking it a step further by querying through Python, that way I can display a step by step process in a Jupyter notebook.  
+## Project Outline
+1. Data Preparation: We first used Microsoft Excel to format and modify a .csv file downloaded from [Our World In Data](https://ourworldindata.org/covid-deaths) into two separate files ("CovidDeaths.csv" and "CovidVaccinations.csv"), which were then uploaded to a local PostgreSQL database.
+2. Connect to Database: Next, we used the Python library Psycopg2 to connect to the PostgreSQL database and run SQL queries to extract the data we needed.
+3. Create Views: We also saved some of the queries as views, which were not used in this project, but can be helpful for other projects.
+4. Data Analysis: Finally, we used the Pandas library to display the results of the queries, perform further analysis and manipulate the data for better understanding.
 
-The main goal of this project is to extract insights and deliver a interactive visualization to showcase the analysis on historical data of COVID-19, up to the date Jan 8, 2022.
+## Project Goal
 
-Another part of this project is to showcase how to integrate Postgres SQL with Python to run queries, and use libraries like Pandas for analysis and data manipulation
+The main goal of this project is to extract insights and deliver a interactive visualization to showcase the analysis on historical data of COVID-19, up to the date Jan 8, 2022. The project also demonstrates how to integrate Postgres SQL with Python to run queries, and use libraries like Pandas for analysis and data manipulation
 
-We will accomplish these goals by using python to connect to a Postgre SQL database, performing some SQL queries to extract data,  save those quesries as views, and finally use those views in a data visulization tool, such as Tableau or PowerBI, to create an interative visualization. 
+## Conclusion
 
-The data for this project was downloaded as a .csv file from [Our World In Data](https://ourworldindata.org/covid-deaths), modified and formatted in Microsoft Excel into two separate .csv files ("CovidDeaths.csv" and "CovidVaccinations.csv"), and then uploaded to a local Postgre SQL database.
+This project serves as a useful resource for anyone looking to connect a PostgreSQL database to Python and run queries through it, as well as for those looking to use Pandas for data analysis and manipulation.
+
+You can find the code for this project on [HERE](https://github.com/Laidbackluck/Covid-Project/blob/main/Covid_SQL_queries.ipynb)
